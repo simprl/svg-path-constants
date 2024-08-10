@@ -1,0 +1,29 @@
+{
+  "name": "svg-path-constants",
+  "version": "1.0.0",
+  "description": "CLI tool to generate constants from SVG files",
+  "keywords": [
+    "react",
+    "svg sprite",
+    "svg path constants",
+    "icons",
+    "svg icons",
+    "generator"
+  ],
+  "author": "simprl",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "svgo": "^3.3.2"
+  },
+  "bin": {
+    "svg-path-constants": "./src/cli.js"
+  },
+  "files": [
+    "src/cli.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simprl/svg-path-constants"
+  }
+}

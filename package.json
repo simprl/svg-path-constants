@@ -1,6 +1,6 @@
 {
   "name": "svg-path-constants",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "CLI tool to generate constants from SVG files",
   "keywords": [
     "react",
@@ -25,5 +25,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/simprl/svg-path-constants"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mock-fs": "^5.2.0"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }

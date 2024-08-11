@@ -170,13 +170,13 @@ function generate(argv) {
     // CLI setup with Commander
     const program = createCommand();
     program
-        .version('1.0.0')
+        .version('1.0.5')
         .description('CLI tool to generate constants from SVG files')
         .option('-i, --input <directory>', 'Input directory containing SVG files', 'src/assets/icons')
-        .option('-o, --output <file>', 'Output file path', 'src/components/Icon/paths.js')
+        .option('-o, --output <file>', 'Output file path or pattern', 'src/components/Icon/paths.js')
         .option('-q, --quote', 'Use single quotes in the output', false)
-        .option('-t, --template <string>', 'Template string for naming convention', '') // Опция для шаблона
-        .option('-f, --format <format>', 'Naming format: CamelCase or default', 'camelCase') // Опция для формата
+        .option('-t, --template <string>', 'Template string for naming convention', '')
+        .option('-f, --format <format>', 'Naming format: camelCase, PascalCase, snake_case, or SCREAMING_SNAKE_CASE', 'camelCase')
         .parse(argv);
 
     const options = program.opts();

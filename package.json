@@ -1,6 +1,6 @@
 {
   "name": "svg-path-constants",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI tool to generate constants from SVG files",
   "keywords": [
     "react",
